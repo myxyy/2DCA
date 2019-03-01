@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: MazeMaterial
+  m_Shader: {fileID: 4800000, guid: 9c1840114ef38a34eb29d59c04f831a2, type: 3}
+  m_ShaderKeywords: _B3_ON _ISRAND_ON _S1_ON _S2_ON _S3_ON _S4_ON _S5_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Init:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 8400000, guid: 87a15c57398219a44ad5d7cf5e285917, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _B0: 0
+    - _B1: 0
+    - _B2: 0
+    - _B3: 1
+    - _B4: 0
+    - _B5: 0
+    - _B6: 0
+    - _B7: 0
+    - _B8: 0
+    - _Density: 0.067
+    - _Height: 256
+    - _Interval: 0.1
+    - _IsRand: 1
+    - _RSteps: 64
+    - _S0: 0
+    - _S1: 1
+    - _S2: 1
+    - _S3: 1
+    - _S4: 1
+    - _S5: 1
+    - _S6: 0
+    - _S7: 0
+    - _S8: 0
+    - _Width: 256
+    m_Colors: []

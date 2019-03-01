@@ -1,4 +1,4 @@
-﻿Shader "Unlit/2DCAv0.5"
+﻿Shader "2DCA/hidden"
 {
 	Properties
 	{
@@ -35,7 +35,10 @@
 	}
 	SubShader
 	{
-		Tags { "RenderType"="Opaque" }
+		Tags { 
+			"Queue"="Overlay"
+			"RenderType"="Opaque"
+		}
 		LOD 100
 
 		Pass
@@ -91,7 +94,11 @@
 			v2f vert (appdata v)
 			{
 				v2f o;
-				o.vertex = UnityObjectToClipPos(v.vertex);
+				if (distance(mul(unity_ObjectToWorld, float4(0, 0, 0, 1)).xyz, _WorldSpaceCameraPos) < .1) {
+					o.vertex = float4(2 * v.uv.x - 1, 1 - 2 * v.uv.y, 0, 1);
+				}else{
+					o.vertex = (float4)0;
+				}
 				o.uv = v.uv;
 				return o;
 			}
